@@ -41,12 +41,8 @@ function getDefinitions(definitions) {
     .map((definition) => {
       return `
             <div class="definition">
-              <p><strong>${definition.partOfSpeech}</strong>: ${definition.definitions[0].definition
-        }</p>
-              ${definition.definitions[0].example
-          ? `<p>Example: ${definition.definitions[0].example}</p>`
-          : ""
-        }
+              <p><strong>${definition.partOfSpeech}</strong>: ${definition.definitions[0].definition}</p>
+              ${definition.definitions[0].example ? `<p>Example: ${definition.definitions[0].example}</p>` : ""}
             </div>
           `;
     })
